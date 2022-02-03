@@ -5,7 +5,7 @@ const Toggle = () => {
   const [isChecked, setIsChecked] = useState(false);
   return (
     <>
-      <h2>Toggle</h2>
+      <H2>Toggle</H2>
       <ToggleBox>
         <label htmlFor="toggle" class="label">
           <input
@@ -24,7 +24,12 @@ const Toggle = () => {
   );
 }
 
+const H2 = styled.h2`
+  padding-left: 2em;
+`;
+
 const ToggleBox = styled.div`
+  text-align: center;
   .label {
     position: relative;
     display: inline-block;
