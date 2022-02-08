@@ -7,18 +7,18 @@ const Toggle = () => {
     <>
       <H2>Toggle</H2>
       <ToggleBox>
-        <label htmlFor="toggle" class="label">
+        <label htmlFor="toggle" className="label">
           <input
             type="checkbox"
             id="toggle"
-            onChange={() => { 
+            onChange={() => {
               isChecked ? setIsChecked(false) : setIsChecked(true);
             }}
             checked={isChecked}
           />
-          <span class="slider"></span>
+          <span className="slider"></span>
         </label>
-        <p>Toggle Switch {!isChecked ? "OFF" : "ON"}</p>
+        <p>Toggle Switch {!isChecked ? 'OFF' : 'ON'}</p>
       </ToggleBox>
     </>
   );
@@ -30,6 +30,7 @@ const H2 = styled.h2`
 
 const ToggleBox = styled.div`
   text-align: center;
+  margin-bottom: 8em;
   .label {
     position: relative;
     display: inline-block;

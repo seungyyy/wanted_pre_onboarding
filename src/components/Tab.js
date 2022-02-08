@@ -6,9 +6,9 @@ const Tab = () => {
   const [currentTab, setCurrentTab] = useState(0);
 
   const menuArr = [
-    { name: 'Tab1', content: 'ONE' },
-    { name: 'Tab2', content: 'TWO' },
-    { name: 'Tab3', content: 'THREE' }
+    { name: 'Tab1', text: 'ONE' },
+    { name: 'Tab2', text: 'TWO' },
+    { name: 'Tab3', text: 'THREE' }
   ];
 
   const handelerSelectTab = (index) => {
@@ -33,7 +33,7 @@ const Tab = () => {
           })}
         </Ul>
       </nav>
-      <Text>Tab menu {menuArr[currentTab].content}</Text>
+      <Text>Tab menu {menuArr[currentTab].text}</Text>
     </Container>
   );
 }
