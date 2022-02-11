@@ -68,7 +68,7 @@ const Ul = styled.ul`
 `;
 
 const Text = styled.p`
-  margin-top: 2em;
+  margin: 2em 0 8em;
   text-align: center;
 `;
 
